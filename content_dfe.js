@@ -42,6 +42,7 @@ window.addEventListener('load', (event) => {
   console.log("começou!");
   if (saveHtml()) {
     const btnNovaConsulta = document.getElementById("ctl00_ContentPlaceHolder1_btnVoltar");
-    btnNovaConsulta.click();
+    if (btnNovaConsulta)
+      btnNovaConsulta.click();
   }
 });
